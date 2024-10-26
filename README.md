@@ -1,5 +1,5 @@
 # NY Times News Portal
-Portal berita simpel yang menampilkan berita-berita teratas dari NY Times API. Dibangun menggunakan Angular, NgRx, Tailwind CSS, dan Three.js.
+Portal berita simpel yang menampilkan berita-berita teratas dari NY Times API. Dibangun menggunakan Angular, NgRx, Tailwind CSS, dan Three.js. Aplikasi sudah di-deploy dan bisa diakses di [https://news-portal-wine.vercel.app/](https://news-portal-wine.vercel.app/).
 
 ## Fitur-fitur
 
@@ -22,7 +22,7 @@ Sebelum menjalakan proyek ini, pastikan sudah install:
 1. Clone repository ini:
 
 ```bash
-    git clone https://github.com/Leonfarhan/News-Portal.git
+git clone https://github.com/Leonfarhan/News-Portal.git
 ```
 
 2. Masuk ke folder proyek:
@@ -46,9 +46,6 @@ npm start
 Aplikasi akan jalan di `http://localhost:4200/`.
 
 ## Deploy ke Vercel
-
-Deploy ke Vercel (Manual)
-Build aplikasi Angular:
 ```
 ng build --prod
 ```
@@ -62,11 +59,11 @@ Import project ke Vercel:
 Konfigurasi Vercel (jika diperlukan):
 
 Vercel biasanya bisa mendeteksi project Angular dengan benar. Tapi, jika ada masalah, cek pengaturan berikut:
-Output Directory: Pastikan diset ke dist/News-Portal.
-Install Command: npm install
-Build Command: Kosongkan karena sudah di-build sebelumnya.
-Framework Preset: Pilih "Other" atau "Angular" jika tersedia.
-Deploy: Setelah konfigurasi beres, deploy project. Vercel akan memberikan URL untuk akses aplikasinya.
+* Output Directory: Pastikan diset ke dist/News-Portal.
+* Install Command: npm install
+* Build Command: Kosongkan karena sudah di-build sebelumnya.
+* Framework Preset: Pilih "Other" atau "Angular" jika tersedia.
+* Deploy: Setelah konfigurasi selesai, deploy project. Vercel akan memberikan URL untuk akses aplikasinya.
 
 ## Test Aplikasi
 Testing aplikasi ini dilakukan secara manual. Setelah di-deploy, coba beberapa hal berikut:
@@ -80,18 +77,18 @@ Testing aplikasi ini dilakukan secara manual. Setelah di-deploy, coba beberapa h
 ```
 ├── src
 │   ├── app
-│   │   ├── app.component.ts       # Komponen utama
-│   │   ├── components            # Komponen-komponen UI
-│   │   │   ├── category-nav      # Navigasi kategori
-│   │   │   ├── news-list        # Daftar berita
-│   │   │   └── three-background  # Animasi background
-│   │   ├── core                  # Services
+│   │   ├── app.component.ts            # Komponen utama
+│   │   ├── components                  # Komponen-komponen UI
+│   │   │   ├── category-nav            # Navigasi kategori
+│   │   │   ├── news-list               # Daftar berita
+│   │   │   └── three-background        # Animasi background
+│   │   ├── core                        # Services
 │   │   │   └── services
-│   │   │       └── news.service.ts # Service buat ambil data berita
-│   │   └── store                 # NgRx store, actions, dll.
-│   ├── global_styles.css          # Global styles (Tailwind CSS)
-│   ├── index.html                 # File HTML utama
-│   └── main.ts                    # Entry point aplikasi
-├── tailwind.config.js             # Konfigurasi Tailwind CSS
-└── ...                             # File konfigurasi lainnya
+│   │   │       └── news.service.ts     # Service untuk ambil data berita
+│   │   └── store                       # NgRx store, actions, dll.
+│   ├── global_styles.css               # Global styles (Tailwind CSS)
+│   ├── index.html                      # File HTML utama
+│   └── main.ts                         # Entry point aplikasi
+├── tailwind.config.js                  # Konfigurasi Tailwind CSS
+└── ...                                 # File konfigurasi lainnya
 ```
